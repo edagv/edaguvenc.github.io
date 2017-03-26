@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html>
+
+<head>
+<title> EDA GUVENC </title>
+<meta charset="UTF-8">
+
+<body>
+
+<table  class="tablo" width="1250"height="5" border="0" >
+<tr>
+<td><h3  class="main-menu"><a href="home.html">Home</h3></td>
+<td><h3  class="main-menu"><a href="personelinfo.html">Personal Information</h3></td>
+<td><h3  class="main-menu"><a href="contactme.html">Contact me</h3></td>
+<td><h3  class="main-menu"><a href="myhobbies.html">My Hobbies</h3></td>
+<td><h3  class="main-menu"><a href="myhometown.html">My Hometown</h3></td>
+<td><h3  class="main-menu"><a href="picturegallery.html">Picture Gallery</h3></td>
+<td><h3  class="main-menu"><a href="familytree.html">Family Tree</h3></td>
+<td><h3  class="main-menu"><a href="socialmedia.html">Social Media</h3></td>
+<td><h3 class="main-menu">Registration Form </h3></td>
+</tr>
+</table>
+
+<form action="test.php">
+	<label for="firstname">First name: </label>
+	<input type="text" id="firstname" name="firstname">
+	<br>
+	
+	<label for="lastname">Last Name: </label>
+	<input type="text" id="lastname" name="lastname">
+	<br>
+	
+	<label for="birthday">Your Birthday: </label>
+	<input type="date" id="birthday" name="birthday">
+	<br>
+	
+	<label for="gender">Gender: </label>
+	<br>
+	<form action="">
+		<input type="radio" name="gender" value="male"> Male<br>
+		<input type="radio" name="gender" value="female"> Female<br>
+		
+    </form>
+    <p><b>Note:</b> When a user clicks on a radio-button, it becomes checked,
+		and all other radio-buttons with equal name become unchecked.</p>
+	
+	<br>
+	<label for="city">City: </label>
+	<select name="city">
+		<option value="bursa">Bursa</option>
+		<option value="eskisehir">Eskisehir</option>
+		<option value="ankara">Ankara</option>
+		<option value="istanbul">Istanbul</option>
+		<option value="kayseri">Kayseri</option>
+		<option value="mersin">Mersin</option>
+		<option value="yalova">Yalova</option>
+		<option value="isparta">Isparta</option>
+		<option value="other">Other</option>
+	</select>
+	<br>
+	<label for="interests">Select your interests: </label>
+	<br>
+	<form action="">
+		<input type="checkbox" name="interests" value="bike">Bike<br>
+		<input type="checkbox" name="interests" value="riding">Riding<br>
+		<input type="checkbox" name="interests" value="cosplaying">Cosplying<br>
+		<input type="checkbox" name="interests" value="drama">Drama<br>
+		<input type="checkbox" name="interests" value="cofferoasting">Coffe Roasting<br>
+	</form>
+	<br>
+	<label for="interests">Interests </label>
+	<input type="text" id="interests" name="interests" placeholder="Add some interests" size="55" >
+	<input type="submit" value="Submit">
+	<br>
+	<label for="photo">Please upload photo</label>
+	<input type="file" name="filename" accept="image/gif, image/jpeg, image/png">
+	<br>
+	
+	<form action="">
+		E-mail: <input type="text" name="email">
+		<br>
+		Password: <input type="password" name="password">
+	</form>
+	<br>
+	
+	<input type="submit" value="Submit" onclick >
+	
+</form>
+</body>
+</html>
